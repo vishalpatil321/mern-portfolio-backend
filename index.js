@@ -16,6 +16,10 @@ server.use(bodyParser.json());
 
 server.use('/api',router);
 
+server.get('/',(req,res) => {
+     res.send('Hello i am backend ,i am running....');
+});
+
 // 8081
 const PORT = process.env.PORT || 8080;
 
